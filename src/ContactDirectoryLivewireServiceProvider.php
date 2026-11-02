@@ -12,7 +12,6 @@ final class ContactDirectoryLivewireServiceProvider extends ServiceProvider
 {
     public function boot(): void
     {
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'module-cms-contact-directory');
         Livewire::component('module-cms-contact-directory::contact-directory', ContactDirectory::class);
     }
 }
